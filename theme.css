@@ -1,13 +1,15 @@
 /*
  * NanoSafety RDF Explorer theme, loaded after the engine's style.css.
- * Colours from the NanoSafety RDF logo: teal #9FC2BB, coral #F27360, pale pink #FBE6E1,
- * grey-blue #9AAABA. Text on the pastel colours stays dark (#343a40) for contrast.
+ * Deeper shades of the logo colours, so white text on them stays readable:
+ *   teal  #2F7A70 (main actions)   coral #C9503C (reset, accents)
+ *   slate #4A5A6A (secondary)      tint  #FBE6E1 / #E8F1EF (backgrounds)
  */
 
-/* Navbar in the logo's background colour, full width */
+/* Navbar: white with a coral accent line, full width, room for the logo */
 .navbar-default {
-    background-color: #FBE6E1;
-    border-color: #f3d2ca;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 3px solid #F27360;
     margin-bottom: 0;
 }
 
@@ -16,6 +18,7 @@
     display: flex !important;
     align-items: center;
     height: auto !important;
+    padding: 8px 15px;
 }
 
 .navbar-default .navbar-header {
@@ -24,7 +27,8 @@
 
 .navbar-default .navbar-brand {
     height: auto;
-    padding: 4px 15px;
+    padding: 4px 24px 4px 12px;
+    margin-left: 0 !important;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -40,20 +44,19 @@
     align-items: center;
 }
 
-.navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #343a40;
+.navbar-default .navbar-nav > li > a {
+    color: #4A5A6A;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    background-color: rgba(242, 115, 96, 0.15);
+    color: #2F7A70;
+    background-color: #E8F1EF;
 }
 
 .navbar-default .input-group-addon {
-    background-color: #9AAABA;
-    border-color: #8a9aaa;
+    background-color: #4A5A6A;
+    border-color: #4A5A6A;
     color: #fff;
 }
 
@@ -62,68 +65,97 @@
     margin-bottom: 0;
 }
 
-/* Buttons: dark text on the logo colours */
-.btn-success, .btn-danger, .btn-warning {
-    color: #343a40;
-    border-color: #6E6F71;
-    font-weight: bold;
+/* Buttons */
+.btn-success, .btn-danger, .btn-warning, .btn-primary {
+    color: #fff;
+    font-weight: 600;
 }
 
 /* Query and Search = teal */
-.btn-success { background-color: #9FC2BB; }
+.btn-success {
+    background-color: #2F7A70;
+    border-color: #276860;
+}
 .btn-success:hover, .btn-success:focus, .btn-success:active {
-    color: #343a40;
-    background-color: #88b3aa;
-    border-color: #343a40;
+    color: #fff;
+    background-color: #276860;
+    border-color: #1f554e;
 }
 
 /* Reset = coral */
-.btn-danger { background-color: #F27360; }
+.btn-danger {
+    background-color: #C9503C;
+    border-color: #b44533;
+}
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
-    color: #343a40;
-    background-color: #ef5d47;
-    border-color: #343a40;
+    color: #fff;
+    background-color: #b44533;
+    border-color: #9c3b2c;
 }
 
-/* Export dropdown = pale pink */
-.btn-warning { background-color: #FBE6E1; }
+/* Export dropdown and the examples refresh button = slate */
+.btn-warning, .btn-primary {
+    background-color: #4A5A6A;
+    border-color: #3f4d5b;
+}
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active,
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active,
 .open > .dropdown-toggle.btn-warning {
-    color: #343a40;
-    background-color: #f6d3ca;
-    border-color: #343a40;
+    color: #fff;
+    background-color: #3f4d5b;
+    border-color: #34404c;
 }
 
-/* Links, spinner, footer */
+/* Panels and selections pick up the teal */
+.panel-default > .panel-heading {
+    background-color: #E8F1EF;
+    border-color: #d3e4e0;
+    color: #23302d;
+}
+
+.list-group-item.node-selected,
+.list-group-item.node-selected:hover {
+    background-color: #2F7A70 !important;
+    border-color: #2F7A70 !important;
+    color: #fff !important;
+}
+
+.CodeMirror {
+    border-color: #c7d3d0;
+}
+
+/* Links, spinner, health dot */
 a, a:visited {
-    color: #0477a0;
+    color: #2F7A70;
 }
 
 a:hover, a:focus {
-    color: #c94a37;
+    color: #C9503C;
 }
 
 .query-spinner .spinner {
-    border-top-color: #F27360;
+    border-top-color: #C9503C;
 }
 
 .dot-checking {
-    background-color: #9AAABA;
+    background-color: #4A5A6A;
 }
 
+/* Footer: light tint, logos large enough to recognise */
 footer {
-    min-height: 50px;
-    background-color: #ffffff;
-    border-top: 1px solid #FBE6E1;
-    color: #6E6F71;
-    padding: 6px 0;
+    min-height: 54px;
+    background-color: #FBF4F2;
+    border-top: 1px solid #f3d9d2;
+    color: #4A5A6A;
+    padding: 8px 0;
     text-align: center;
 }
 
 footer img {
     vertical-align: middle;
+    margin: 0 6px;
 }
 
 #result {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }

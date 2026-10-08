@@ -31,7 +31,7 @@ window.SNORQL_CONFIG = {
     ],
 
     // Branding (applied by the engine's branding.js; colours are in theme.css).
-    logo: { src: "assets/images/nanosafety-snorql-logo.png", alt: "NanoSafety RDF", height: 70 },
+    logo: { src: "assets/images/nanosafety-rdf-logo.png", alt: "NanoSafety RDF", height: 72 },
     favicon: "assets/images/nanosafety-favicon.ico",
     endpointLabel: "SPARQL Endpoint",
     metaDescription: "Explore the NanoSafety RDF data with SPARQL",
@@ -40,10 +40,10 @@ window.SNORQL_CONFIG = {
         { label: "NanoSafety RDF", url: "https://nanosafety.rdf.bigcat-bioinformatics.org/sparql" }, " | ",
         { label: "Example queries", url: "https://github.com/h2020-riskgone/SPARQLQueries" }, " | ",
         { label: "GitHub", url: "https://github.com/tgx-um/nanosafety-snorql-ui" }, " \u2014 ",
-        { image: "assets/images/Logo-TGX.png", url: "https://www.maastrichtuniversity.nl/research/translational-genomics", alt: "TGX", height: 25 }, " ",
-        { image: "assets/images/riskgone.png", url: "https://riskgone.wp.nilu.no/", alt: "RiskGONE", height: 25 }, " ",
-        { image: "assets/images/nanosolveit.png", url: "https://nanosolveit.eu/", alt: "NanoSolveIT", height: 25 }, " ",
-        { image: "assets/images/sbd4nano2.png", url: "https://www.sbd4nano.eu/", alt: "SbD4Nano", height: 25 }
+        { image: "assets/images/Logo-TGX.png", url: "https://www.maastrichtuniversity.nl/research/translational-genomics", alt: "TGX", height: 32 }, " ",
+        { image: "assets/images/riskgone.png", url: "https://riskgone.wp.nilu.no/", alt: "RiskGONE", height: 32 }, " ",
+        { image: "assets/images/nanosolveit.png", url: "https://nanosolveit.eu/", alt: "NanoSolveIT", height: 32 }, " ",
+        { image: "assets/images/sbd4nano2.png", url: "https://www.sbd4nano.eu/", alt: "SbD4Nano", height: 32 }
     ],
     // Optional branding (applied by assets/js/branding.js). Leave a key out to
     // keep the markup in index.html. Text is set as plain text and URLs are
