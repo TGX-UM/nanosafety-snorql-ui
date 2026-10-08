@@ -1,0 +1,129 @@
+/*
+ * NanoSafety RDF Explorer theme, loaded after the engine's style.css.
+ * Colours from the NanoSafety RDF logo: teal #9FC2BB, coral #F27360, pale pink #FBE6E1,
+ * grey-blue #9AAABA. Text on the pastel colours stays dark (#343a40) for contrast.
+ */
+
+/* Navbar in the logo's background colour, full width */
+.navbar-default {
+    background-color: #FBE6E1;
+    border-color: #f3d2ca;
+    margin-bottom: 0;
+}
+
+.navbar-default > .container {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    height: auto !important;
+}
+
+.navbar-default .navbar-header {
+    float: none;
+}
+
+.navbar-default .navbar-brand {
+    height: auto;
+    padding: 4px 15px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-collapse {
+    float: none;
+    flex: 1;
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #343a40;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: rgba(242, 115, 96, 0.15);
+}
+
+.navbar-default .input-group-addon {
+    background-color: #9AAABA;
+    border-color: #8a9aaa;
+    color: #fff;
+}
+
+.navbar-form.navbar-right {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Buttons: dark text on the logo colours */
+.btn-success, .btn-danger, .btn-warning {
+    color: #343a40;
+    border-color: #6E6F71;
+    font-weight: bold;
+}
+
+/* Query and Search = teal */
+.btn-success { background-color: #9FC2BB; }
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+    color: #343a40;
+    background-color: #88b3aa;
+    border-color: #343a40;
+}
+
+/* Reset = coral */
+.btn-danger { background-color: #F27360; }
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+    color: #343a40;
+    background-color: #ef5d47;
+    border-color: #343a40;
+}
+
+/* Export dropdown = pale pink */
+.btn-warning { background-color: #FBE6E1; }
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active,
+.open > .dropdown-toggle.btn-warning {
+    color: #343a40;
+    background-color: #f6d3ca;
+    border-color: #343a40;
+}
+
+/* Links, spinner, footer */
+a, a:visited {
+    color: #0477a0;
+}
+
+a:hover, a:focus {
+    color: #c94a37;
+}
+
+.query-spinner .spinner {
+    border-top-color: #F27360;
+}
+
+.dot-checking {
+    background-color: #9AAABA;
+}
+
+footer {
+    min-height: 50px;
+    background-color: #ffffff;
+    border-top: 1px solid #FBE6E1;
+    color: #6E6F71;
+    padding: 6px 0;
+    text-align: center;
+}
+
+footer img {
+    vertical-align: middle;
+}
+
+#result {
+    margin-bottom: 60px;
+}
